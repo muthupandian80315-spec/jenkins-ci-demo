@@ -1,0 +1,18 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout') {
+            steps {
+                echo 'Source code checkout completed'
+            }
+        }
+
+        stage('Build') {
+            steps {
+                sh 'chmod +x test.sh'
+                sh './test.sh'
+            }
+        }
+    }
+}
