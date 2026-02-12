@@ -1,29 +1,60 @@
-# Jenkins CI Automation on AWS EC2
+Project: Jenkins CI/CD on AWS EC2
 
-## Project Overview
-This is a beginner-level DevOps project to demonstrate Continuous Integration (CI) using Jenkins on an AWS EC2 Ubuntu instance.
+This project demonstrates a beginner-level CI/CD pipeline implemented using Jenkins and GitHub, deploying a static web application to an AWS EC2 (Ubuntu) instance.
 
-## Tools & Technologies
-- AWS EC2 (Ubuntu 22.04)
-- Jenkins
-- GitHub
-- Linux
-- Shell Scripting
+🛠 Tools & Technologies Used
 
-## What I Did
-- Launched an Ubuntu EC2 instance on AWS
-- Installed and configured Jenkins
-- Integrated Jenkins with a GitHub repository
-- Created a CI job to automatically execute a shell script
-- Implemented a Jenkins pipeline using Jenkinsfile
+Jenkins (Freestyle & Pipeline)
 
-## Project Workflow
-1. Developer pushes code to GitHub
-2. Jenkins pulls the latest code from GitHub
-3. Jenkins executes the build script (`test.sh`)
-4. Build status is displayed in Jenkins dashboard
+Git & GitHub
 
-## Outcome
-- Understood Jenkins CI concepts
-- Gained hands-on experience with cloud-based Jenkins
-- Learned basic pipeline automation using Jenkinsfile
+AWS EC2 (Ubuntu)
+
+Linux
+
+Shell Scripting
+
+Apache Web Server
+
+🔁 CI (Continuous Integration)
+
+Configured a Jenkins Freestyle job
+
+Integrated GitHub repository with Jenkins
+
+Automated code checkout and build using shell script
+
+Verified build execution using Jenkins console output
+
+🚀 CD (Continuous Deployment)
+
+Implemented Jenkins Pipeline job using Jenkinsfile
+
+Automated deployment of a static website (index.html) to EC2
+
+Used Jenkins pipeline stages for Build and Deploy
+
+Deployed files to /var/www/html directory
+
+Verified deployment using EC2 public IP
+
+📂 Project Structure
+jenkins-ci-demo
+├── Jenkinsfile
+├── index.html
+├── test.sh
+└── README.md
+
+📈 Learning Outcome
+
+Hands-on experience with Jenkins CI/CD
+
+Understanding of pipeline-as-code using Jenkinsfile
+
+Real-time troubleshooting of build and deployment issues
+
+Practical exposure to AWS EC2 and Linux commands
+
+👤 Author
+
+Muthu Pandian
